@@ -11,7 +11,7 @@ export default function Layout({ children }: Iprops) {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main style={{ marginTop: "20rem" }}>{children}</main>
       <Footer />
     </>
   );

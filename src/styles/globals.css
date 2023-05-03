@@ -1,4 +1,11 @@
 :root {
-  
- 
+  --primary-color: #208ef3;
+  --secondary-color: #f32d20;
+  --gray: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
