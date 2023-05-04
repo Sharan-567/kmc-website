@@ -1,0 +1,211 @@
+/* ---------------  Banner Section  ------------------------ */
+.container {
+  position: relative;
+}
+
+.imagewrapper {
+  position: relative;
+  height: 40rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    67.28deg,
+    rgba(32, 142, 243, 0.75) 18.41%,
+    rgba(151, 190, 226, 0.354167) 75.08%
+  );
+}
+
+.textContainer {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  padding-top: 11rem;
+  padding-left: 5rem;
+}
+
+@media (max-width: 999px) {
+}
+
+@media (max-width: 480px) {
+  .text {
+    padding-top: 11rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+  }
+}
+
+/* ---------------  Detail Section  ------------------------ */
+
+.detailText {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.ulHader {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.ulItem {
+  font-size: 28px;
+  font-style: italic;
+}
+
+.listContainer {
+  border-left: 4px solid var(--secondary-color);
+  padding-left: 2rem;
+}
+
+/* -------------- CourselSection ---------------------- */
+
+.couserlSection {
+  height: 624px;
+  background: linear-gradient(
+    82.83deg,
+    #208ef3 22.84%,
+    rgba(32, 142, 243, 0.33307) 116.3%,
+    rgba(32, 142, 243, 0.149788) 124.3%
+  );
+  width: 100%;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.couselContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -10rem;
+}
+
+.coursel {
+  max-width: 1100px;
+  margin: auto;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.imageCouselContainer {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+}
+
+.buttonContainer {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 999px) {
+  .buttonContainer {
+    top: 20%;
+  }
+  .btn {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .couserlSection {
+    height: 404px;
+  }
+
+  .imageCouselContainer {
+    height: 30rem;
+  }
+  .buttonContainer {
+    top: 18%;
+  }
+  .btn {
+    font-size: 2rem;
+  }
+}
+
+/* -------------- Team Section ---------------------- */
+
+.teamSection {
+  margin-bottom: 5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.teamContent {
+  margin-top: 2rem;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* -------------- Venu Section ---------------------- */
+
+.venuSection {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.venuLeftContainer {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+.venuPicture {
+  position: relative;
+  height: 474px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--gray);
+
+  margin-top: 5rem;
+  right: -7rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.venuRightContainer {
+  height: 40rem;
+  width: 60%;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.venuText {
+  font-size: 2rem;
+  padding-left: 4rem;
+  color: white;
+  padding-top: 2rem;
+}
