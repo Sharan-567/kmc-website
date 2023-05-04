@@ -203,16 +203,17 @@ const Venu = () => {
   return (
     <section className={styles.venuSection}>
       <Row>
-        <Col sm={6} className={styles.venuLeftContainer}>
+        <Col lg={6} className={styles.venuLeftContainer}>
           <div className={styles.venuPicture}>
             <h1>Venue Picture</h1>
           </div>
         </Col>
-        <Col sm={6} className={styles.venuRightContainer}>
+        <Col lg={6} className={styles.venuRightContainer}>
           <Header
             title="The Venue"
-            styles={{ color: "white", fontSize: "4rem", fontWeight: "500" }}
+            styles={{ color: "white", fontWeight: "500" }}
             barColor="white"
+            className={styles.venuHeader}
           />
           <p className={styles.venuText}>
             Interact Lecture Hall- Ga <br></br> Department of Medical <br></br>

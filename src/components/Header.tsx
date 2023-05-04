@@ -4,12 +4,15 @@ type IProps = {
   title: string;
   barColor: string;
   styles?: {};
+  className?: string;
 };
 
-const Header = ({ title, barColor, styles }: IProps) => {
+const Header = ({ title, barColor, styles, className }: IProps) => {
   return (
     <span style={{ position: "relative" }}>
-      <span style={{ ...styles }}>{title}</span>
+      <span className={className} style={{ ...styles }}>
+        {title}
+      </span>
       <div
         style={{
           background: barColor,
