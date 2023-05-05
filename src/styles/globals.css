@@ -9,3 +9,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.i-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.4264px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.i-input {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.65px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.63);
+  background: #efefef;
+  border-radius: 3.46901px;
+  padding: 0.75rem;
+  border: none;
+  margin-top: auto;
+}
+
+.i-req {
+  color: var(--secondary-color);
+}
+
+.i-control {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 1rem;
+}

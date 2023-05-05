@@ -1,0 +1,15 @@
+.reg_header {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  width: 24rem;
+  border: none;
+  color: white;
+  padding: 0.75rem 1rem;
+  margin: 5rem 0rem;
+  cursor: pointer;
+  font-weight: 500;
+}

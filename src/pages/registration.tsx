@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import React from "react";
+import Link from "next/link";
 import { Container } from "react-bootstrap";
 import s from "@/styles/registration.module.css";
 import { FaPen } from "react-icons/fa";
@@ -21,10 +22,12 @@ const Registration = () => {
             </p>
           </div>
           <div>
-            <button className={s.btn}>
-              <FaPen size={40} color="white" className="pe-3" />
-              Online Registration Access
-            </button>
+            <Link href={"/registrationForm"}>
+              <button className={s.btn}>
+                <FaPen size={40} color="white" className="pe-3" />
+                Online Registration Access
+              </button>
+            </Link>
           </div>
         </div>
         <div
