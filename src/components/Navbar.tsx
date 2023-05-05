@@ -112,10 +112,10 @@ const BottomBarNav = () => {
                 >
                   Registration
                 </Link>
-                <Link className={`${styles.navigation__link}`} href="link">
+                <Link className={`${styles.navigation__link}`} href="/abstract">
                   Abstract
                 </Link>
-                <Link className={`${styles.navigation__link}`} href="link">
+                <Link className={`${styles.navigation__link}`} href="/events">
                   Previous <br></br> Events
                 </Link>
                 <Link className={`${styles.navigation__link}`} href="/contact">
