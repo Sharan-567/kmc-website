@@ -21,6 +21,10 @@
   border-radius: 5px;
 }
 
+.btn:active {
+  box-shadow: none;
+}
+
 .table {
   margin-bottom: 5rem;
   margin-top: 5rem;

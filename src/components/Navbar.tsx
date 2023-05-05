@@ -115,7 +115,10 @@ const BottomBarNav = () => {
                 <Link className={`${styles.navigation__link}`} href="/abstract">
                   Abstract
                 </Link>
-                <Link className={`${styles.navigation__link}`} href="/events">
+                <Link
+                  className={`${styles.navigation__link}`}
+                  href="/previousEvents"
+                >
                   Previous <br></br> Events
                 </Link>
                 <Link className={`${styles.navigation__link}`} href="/contact">

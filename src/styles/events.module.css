@@ -1,0 +1,96 @@
+.container {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.reg_header {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.subHeader {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  padding-bottom: 2rem;
+}
+
+.imageContainer {
+  position: relative;
+  height: 28rem;
+  border-radius: 5px;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.titleContainer {
+  background: linear-gradient(
+    360deg,
+    #208ef3 -89.72%,
+    rgba(32, 142, 243, 0) 83.33%
+  );
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 0px 0px 5px 5px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--primary-color);
+}
+
+.eventContainer {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 999px) {
+  .image {
+    object-fit: contain;
+  }
+  .imageContainer {
+    height: 20rem;
+  }
+  .titleContainer {
+    zoom: 80%;
+  }
+  .eventContainer {
+    margin-bottom: 2rem;
+  }
+  .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    object-fit: contain;
+  }
+
+  .imageContainer {
+    height: 10rem;
+  }
+  .titleContainer {
+    zoom: 70%;
+  }
+  .container {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+  .eventContainer {
+    margin-bottom: 2rem;
+  }
+}
