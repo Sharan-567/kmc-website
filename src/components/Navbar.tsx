@@ -9,8 +9,10 @@ import {
 } from "react-bootstrap";
 import styles from "@/styles/Home.module.css";
 import { BsFillCircleFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 export default function Navigation() {
+  const { pathname } = useRouter();
   return (
     <nav
       style={{
@@ -21,13 +23,14 @@ export default function Navigation() {
         zIndex: 10,
       }}
     >
-      <TopBar />
-      <BottomBarNav />
+      <TopBar pathname={pathname} />
+      <BottomBarNav pathname={pathname} />
     </nav>
   );
 }
 
-const TopBar = () => {
+const TopBar = ({ pathname }: { pathname: string }) => {
+  console.log(pathname);
   return (
     <div
       style={{
@@ -45,29 +48,34 @@ const TopBar = () => {
           margin: "auto",
         }}
       >
-        <Image
-          src="/images/logo.png"
-          alt="manipal-logo"
-          width={352}
-          height={70}
-          quality={100}
-          style={{ objectFit: "contain" }}
-        />
+        <Link href="/">
+          <Image
+            src="/images/logo.png"
+            alt="manipal-logo"
+            width={352}
+            height={70}
+            quality={100}
+            style={{ objectFit: "contain" }}
+          />
+        </Link>
 
-        <Image
-          src="/images/big-logo.png"
-          alt="manipal-logo"
-          width={452}
-          height={85}
-          quality={100}
-          style={{ objectFit: "contain" }}
-        />
+        {pathname === "/" && (
+          <Image
+            className={styles.rightLogo}
+            src="/images/big-logo.png"
+            alt="manipal-logo"
+            width={452}
+            height={70}
+            quality={100}
+            style={{ objectFit: "contain" }}
+          />
+        )}
       </div>
     </div>
   );
 };
 
-const BottomBarNav = () => {
+const BottomBarNav = ({ pathname }: { pathname: string }) => {
   return (
     <div
       className={`${styles.navigation}`}
@@ -83,7 +91,7 @@ const BottomBarNav = () => {
               width: "100%",
               color: "white",
             }}
-            expand="md"
+            expand="lg"
             variant="dark"
           >
             <NavbarBrand></NavbarBrand>
@@ -103,25 +111,65 @@ const BottomBarNav = () => {
                     Team
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Link className={`${styles.navigation__link}`} href="#home">
+                <div className={styles.homeContainer}>
+                  {pathname === "/" ? (
+                    <div className={styles.dropdown}>
+                      <Link className={styles.dropdownLink} href="/">
+                        About
+                      </Link>
+                      <div>
+                        <BsFillCircleFill size={8} className="me-2" />
+                        Event
+                      </div>
+                      <div>
+                        <BsFillCircleFill size={8} className="me-2" />
+                        Team
+                      </div>
+                    </div>
+                  ) : (
+                    <Link className={styles.homeLink} href="/">
+                      About
+                    </Link>
+                  )}
+                </div>
+                <Link
+                  className={`${styles.navigation__link} ${
+                    pathname === "/programs" ? styles.active : ""
+                  }`}
+                  href="/programs"
+                >
                   Speakers <br></br>and Program
                 </Link>
                 <Link
                   href={"/registration"}
-                  className={`${styles.navigation__link}`}
+                  className={`${styles.navigation__link} ${
+                    pathname === "/registration" ? styles.active : ""
+                  }`}
                 >
                   Registration
                 </Link>
-                <Link className={`${styles.navigation__link}`} href="/abstract">
+                <Link
+                  className={`${styles.navigation__link} ${
+                    pathname === "/abstract" ? styles.active : ""
+                  }`}
+                  href="/abstract"
+                >
                   Abstract
                 </Link>
                 <Link
-                  className={`${styles.navigation__link}`}
+                  className={`${styles.navigation__link} ${
+                    pathname === "/previousEvents" ? styles.active : ""
+                  }`}
                   href="/previousEvents"
                 >
                   Previous <br></br> Events
                 </Link>
-                <Link className={`${styles.navigation__link}`} href="/contact">
+                <Link
+                  className={`${styles.navigation__link} ${
+                    pathname === "/contact" ? styles.active : ""
+                  }`}
+                  href="/contact"
+                >
                   Contact
                 </Link>
               </Nav>
