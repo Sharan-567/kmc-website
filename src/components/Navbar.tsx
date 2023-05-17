@@ -111,7 +111,15 @@ const BottomBarNav = ({ pathname }: { pathname: string }) => {
                     Team
                   </NavDropdown.Item>
                 </NavDropdown>
-                <div className={styles.homeContainer}>
+                <Link
+                  className={`${styles.navigation__link} ${
+                    pathname === "/" ? styles.active : ""
+                  }`}
+                  href="/"
+                >
+                  About
+                </Link>
+                {/* <div className={styles.homeContainer}>
                   {pathname === "/" ? (
                     <div className={styles.dropdown}>
                       <Link className={styles.dropdownLink} href="/">
@@ -131,7 +139,7 @@ const BottomBarNav = ({ pathname }: { pathname: string }) => {
                       About
                     </Link>
                   )}
-                </div>
+                </div> */}
                 <Link
                   className={`${styles.navigation__link} ${
                     pathname === "/programs" ? styles.active : ""
