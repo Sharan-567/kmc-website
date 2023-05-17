@@ -46,33 +46,33 @@ export default function Footer() {
           >
             <div className={`${styles.footer__icons_container}`}>
               <Image
-                src="/images/facebook.png"
+                src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342892/kmc/facebook_lafwmf.png"
                 height={40}
                 width={40}
                 alt="facebook-logo"
                 quality={100}
               />
               <Image
-                src="/images/twitter.png"
+                src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342904/kmc/twitter_nu45al.png"
                 height={40}
                 width={40}
-                alt="facebook-logo"
+                alt="twitter-logo"
                 quality={100}
               />
               <Image
-                src="/images/linkedin.png"
+                src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342894/kmc/linkedin_oilurr.png"
                 height={40}
                 width={40}
-                alt="facebook-logo"
+                alt="linkedin-logo"
                 quality={100}
               />
             </div>
             <Image
               className={`${styles.footer_logo}`}
-              src="/images/white-logo.png"
+              src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342906/kmc/white-logo_isppzm.png"
               height={280}
               width={540}
-              alt="facebook-logo"
+              alt="white-logo"
               quality={100}
               style={{ objectFit: "contain" }}
             />

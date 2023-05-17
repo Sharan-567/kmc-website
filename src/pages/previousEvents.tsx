@@ -17,47 +17,47 @@ const Events = () => {
         <Event
           title="Indo-US Symposium on Disorders of the Developing Brain"
           date="27-28 October 2012"
-          src="/images/e1.png"
+          src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342913/kmc/e1_acpldr.png"
         />
         <Event
           title="UCSC Genome Browser and Human Genome Bioinformatics Workshop"
           date="16-17 November, 2013"
-          src="/images/e2.png"
+          src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342891/kmc/e2_q2rvim.png"
         />
         <Event
           title="Manipal Genetics Update I"
           date="7 December 2014"
-          src="/images/e3.png"
+          src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342902/kmc/e3_gmdr9h.png"
         />
         <Event
           title="Manipal Genetics Update II"
           subTitle="Hands-on Workshop on Analysis of Human Exome Data"
           date="8-22 January 2016"
-          src="/images/e4.png"
+          src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342921/kmc/e4_vvws9s.png"
         />
         <Event
           title="Manipal Genetics Update III"
           subTitle="Genetic Disorders of Bone"
           date="1-2 December 2016"
-          src="/images/e5.png"
+          src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342888/kmc/e5_xyfdrw.png"
         />
         <Event
           title="Manipal Genetics Update IV"
           subTitle="Genetic Counseling"
           date="3-4 March 2017"
-          src="/images/e6.png"
+          src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342878/kmc/e6_fpskvw.png"
         />
         <Event
           title="Manipal Genetics Update V"
           subTitle="Genomics of Neurodevelopmental Disorders"
           date="9- 10 February 2019"
-          src="/images/e7.png"
+          src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342909/kmc/e7_oexy50.png"
         />
         <Event
           title="Manipal Genetics Update VI"
           subTitle="Marfan syndrome and other aortopathies"
           date="14- 15 February 2020"
-          src="/images/e8.png"
+          src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342907/kmc/e8_fe0s3t.png"
         />
       </Container>
     </section>

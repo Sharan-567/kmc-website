@@ -26,7 +26,7 @@ const Banner = () => {
       <div className={styles.container}>
         <div className={styles.imagewrapper}>
           <Image
-            src="/images/banner.png"
+            src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342879/kmc/banner_ehiso0.png"
             alt="manipal acdemy of higher education"
             quality={100}
             fill
@@ -134,7 +134,7 @@ const CourselSection = () => {
             <div className={styles.imageCouselContainer}>
               <Image
                 className="service__img"
-                src="/images/banner.png"
+                src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342879/kmc/banner_ehiso0.png"
                 alt="coursel-images"
                 fill
                 style={{
@@ -146,7 +146,7 @@ const CourselSection = () => {
             <div className={styles.imageCouselContainer}>
               <Image
                 className="service__img"
-                src="/images/banner.png"
+                src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342879/kmc/banner_ehiso0.png"
                 alt="coursel-images"
                 fill
                 style={{

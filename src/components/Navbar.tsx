@@ -50,7 +50,7 @@ const TopBar = ({ pathname }: { pathname: string }) => {
       >
         <Link href="/">
           <Image
-            src="/images/logo.png"
+            src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342907/kmc/logo_yt73xm.png"
             alt="manipal-logo"
             width={352}
             height={70}
@@ -62,8 +62,8 @@ const TopBar = ({ pathname }: { pathname: string }) => {
         {pathname === "/" && (
           <Image
             className={styles.rightLogo}
-            src="/images/big-logo.png"
-            alt="manipal-logo"
+            src="https://res.cloudinary.com/teleopdassets/image/upload/v1684342863/kmc/big-logo_q6jsvw.png"
+            alt="manipal-logo-big"
             width={452}
             height={70}
             quality={100}
