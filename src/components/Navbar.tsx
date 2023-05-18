@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -6,6 +7,7 @@ import {
   Navbar,
   NavbarBrand,
   NavDropdown,
+  NavLink,
 } from "react-bootstrap";
 import styles from "@/styles/Home.module.css";
 import { BsFillCircleFill } from "react-icons/bs";
@@ -30,7 +32,6 @@ export default function Navigation() {
 }
 
 const TopBar = ({ pathname }: { pathname: string }) => {
-  console.log(pathname);
   return (
     <div
       style={{
@@ -76,6 +77,16 @@ const TopBar = ({ pathname }: { pathname: string }) => {
 };
 
 const BottomBarNav = ({ pathname }: { pathname: string }) => {
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleNavbarToggle = () => {
+    setExpanded(!expanded);
+  };
+
+  const handleLinkClick = () => {
+    setExpanded(false);
+  };
+
   return (
     <div
       className={`${styles.navigation}`}
@@ -91,27 +102,20 @@ const BottomBarNav = ({ pathname }: { pathname: string }) => {
               width: "100%",
               color: "white",
             }}
+            collapseOnSelect
             expand="lg"
             variant="dark"
+            expanded={expanded}
           >
             <NavbarBrand></NavbarBrand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle
+              onClick={handleNavbarToggle}
+              aria-controls="basic-navbar-nav"
+            />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className={`${styles.navigation__links_container} me-auto`}>
-                <NavDropdown
-                  title="About"
-                  id={`${styles.navigation__dropdown_container}`}
-                >
-                  <NavDropdown.Item href="#action/3.1">
-                    <BsFillCircleFill size={8} className="me-2" />
-                    Event
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    <BsFillCircleFill size={8} className="me-2" />
-                    Team
-                  </NavDropdown.Item>
-                </NavDropdown>
                 <Link
+                  onClick={handleLinkClick}
                   className={`${styles.navigation__link} ${
                     pathname === "/" ? styles.active : ""
                   }`}
@@ -119,28 +123,9 @@ const BottomBarNav = ({ pathname }: { pathname: string }) => {
                 >
                   About
                 </Link>
-                {/* <div className={styles.homeContainer}>
-                  {pathname === "/" ? (
-                    <div className={styles.dropdown}>
-                      <Link className={styles.dropdownLink} href="/">
-                        About
-                      </Link>
-                      <div>
-                        <BsFillCircleFill size={8} className="me-2" />
-                        Event
-                      </div>
-                      <div>
-                        <BsFillCircleFill size={8} className="me-2" />
-                        Team
-                      </div>
-                    </div>
-                  ) : (
-                    <Link className={styles.homeLink} href="/">
-                      About
-                    </Link>
-                  )}
-                </div> */}
+
                 <Link
+                  onClick={handleLinkClick}
                   className={`${styles.navigation__link} ${
                     pathname === "/programs" ? styles.active : ""
                   }`}
@@ -149,6 +134,7 @@ const BottomBarNav = ({ pathname }: { pathname: string }) => {
                   Speakers <br></br>and Program
                 </Link>
                 <Link
+                  onClick={handleLinkClick}
                   href={"/registration"}
                   className={`${styles.navigation__link} ${
                     pathname === "/registration" ? styles.active : ""
@@ -157,6 +143,7 @@ const BottomBarNav = ({ pathname }: { pathname: string }) => {
                   Registration
                 </Link>
                 <Link
+                  onClick={handleLinkClick}
                   className={`${styles.navigation__link} ${
                     pathname === "/abstract" ? styles.active : ""
                   }`}
@@ -165,6 +152,7 @@ const BottomBarNav = ({ pathname }: { pathname: string }) => {
                   Abstract
                 </Link>
                 <Link
+                  onClick={handleLinkClick}
                   className={`${styles.navigation__link} ${
                     pathname === "/previousEvents" ? styles.active : ""
                   }`}
@@ -173,6 +161,7 @@ const BottomBarNav = ({ pathname }: { pathname: string }) => {
                   Previous <br></br> Events
                 </Link>
                 <Link
+                  onClick={handleLinkClick}
                   className={`${styles.navigation__link} ${
                     pathname === "/contact" ? styles.active : ""
                   }`}

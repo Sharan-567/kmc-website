@@ -42,7 +42,7 @@ const Registration = () => {
           <p>
             Early bird registration till: 30th October 2023<br></br> Last date
             for registration: 31st December 2023<br></br>{" "}
-            <p style={{ color: "#f32d20" }}>No spot registrations</p>
+            <span style={{ color: "#f32d20" }}>No spot registrations</span>
           </p>
         </div>
         <div>
@@ -58,21 +58,25 @@ export default Registration;
 const Table = () => {
   return (
     <table className={s.table} style={{ width: "100%", textAlign: "center" }}>
-      <tr style={{ background: "#208ef3", color: "white" }}>
-        <th>Registration Fee</th>
-        <th>Until 30th October 2023</th>
-        <th>31st December 20233</th>
-      </tr>
-      <tr>
-        <td>Students</td>
-        <td>2500 INR</td>
-        <td>3500 INR</td>
-      </tr>
-      <tr>
-        <td>Faculty an Others</td>
-        <td>4000 INR</td>
-        <td>5500 INR</td>
-      </tr>
+      <thead>
+        <tr style={{ background: "#208ef3", color: "white" }}>
+          <th>Registration Fee</th>
+          <th>Until 30th October 2023</th>
+          <th>31st December 20233</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Students</td>
+          <td>2500 INR</td>
+          <td>3500 INR</td>
+        </tr>
+        <tr>
+          <td>Faculty an Others</td>
+          <td>4000 INR</td>
+          <td>5500 INR</td>
+        </tr>
+      </tbody>
     </table>
   );
 };

@@ -10,7 +10,7 @@ import Header from "@/components/Header";
 
 export default function Main() {
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <Banner />
       <Detail />
       <CourselSection />

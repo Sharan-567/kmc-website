@@ -1,13 +1,20 @@
 /**
-   * @type {import('next').NextConfig}
-   */
-const nextConfig   = {
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
   images: {
-    loader: 'akamai',
-    path: '',
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+        pathname: "/teleopdassets/**",
+      },
+    ],
+    // loader: "akamai",
+    // path: "",
   },
-  assetPrefix: './',
+  assetPrefix: "./",
 };
 
-export default   nextConfig;
-
+export default nextConfig;
