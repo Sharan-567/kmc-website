@@ -27,7 +27,7 @@ const Contact = () => {
         }),
       })
         .then((response: any) => {
-          console.log(JSON.stringify(response.data));
+          console.log(JSON.stringify(response));
         })
         .catch((error: any) => {
           console.log(error);

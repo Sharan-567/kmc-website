@@ -21,7 +21,7 @@ const RegsitrationForm = () => {
           response: { results: data, scores: {}, createdAt: new Date() },
         })
         .then((response: any) => {
-          console.log(JSON.stringify(response.data));
+          console.log(JSON.stringify(response));
         })
         .catch((error: any) => {
           console.log(error);
