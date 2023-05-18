@@ -46,12 +46,12 @@
   border-bottom: 3px solid var(--secondary-color);
 }
 
-.table th {
+.t_header {
   padding: 0.5rem;
   font-size: 24px;
 }
 
-.table td {
+.table tbody td {
   padding: 0.5rem;
   font-size: 24px;
 }
