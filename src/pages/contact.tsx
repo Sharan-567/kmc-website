@@ -27,6 +27,8 @@ const Contact = () => {
         }),
       })
         .then((response: any) => {
+          toast("Success", { autoClose: 2000, type: "success" });
+          setData({});
           console.log(JSON.stringify(response));
         })
         .catch((error: any) => {

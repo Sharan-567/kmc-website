@@ -20,13 +20,15 @@ const RegsitrationForm = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          marketingCampId: "6464fb446f6ad6339a947340",
-          formId: "6464fc6e6f6ad6339a9473b9",
+          marketingCampId: "6464fedc6f6ad6339a947493",
+          formId: "6464fe4b6f6ad6339a94745e",
           userId: "611c0b8adc8dab65254fd11e",
           response: { results: data, scores: {}, createdAt: new Date() },
         }),
       })
         .then((response: any) => {
+          toast("Success", { autoClose: 2000, type: "success" });
+          setData({});
           console.log(JSON.stringify(response));
         })
         .catch((error: any) => {
