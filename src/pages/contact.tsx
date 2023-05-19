@@ -3,7 +3,6 @@ import { toast } from "react-toastify";
 import Header from "@/components/Header";
 import s from "@/styles/contact.module.css";
 import React from "react";
-import { headers } from "next/dist/client/components/headers";
 
 const Contact = () => {
   const [data, setData] = React.useState({});
@@ -18,6 +17,7 @@ const Contact = () => {
         headers: {
           Authorization:
             "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibTE2bGFic2FkbWluIiwidHlwZSI6IlN1cGVyVXNlciIsImNvbnRhY3QiOiI5OTgwODczODAwIiwicHJvZmlsZVVSTCI6bnVsbCwic2lnbiI6Imh0dHBzOi8vbXl0ZWxlb3BkLnMzLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbS9zaWduLTE2ODA3ODAxNTM0NDkucG5nIiwiaWQiOiI2MTFjMGI4YWRjOGRhYjY1MjU0ZmQxMWUiLCJkZXBhcnRtZW50IjoiIiwicm9sZXMiOlt7ImRlZmF1bHRSb3V0ZSI6IndvcmtsaXN0L3NjaGVkdWxlZCIsIl9pZCI6IjYzMjFhNTA0YTQ2YjJjNzlmNmYwMWNiZiIsIm5hbWUiOiJUZXN0IFJvbGUiLCJkZXNjcmlwdGlvbiI6IiIsInBlcm1pc3Npb25zIjpbeyJhcHByb3ZhbE1ldGFEYXRhIjp7ImJlaGF2aW91ciI6Im5vX25lZWQiLCJub09mQXBwcm92YWxzTmVlZGVkIjoxfSwiX2lkIjoiNjMyMWE1MDRhNDZiMmM3OWY2ZjAxY2JkIiwia2V5Ijoic2V0dGxlX3JlZnVuZCJ9XSwiYWxsUGVybWlzc2lvbnNTZWxlY3RlZCI6dHJ1ZSwiY3JlYXRlZEF0IjoiMjAyMi0wOS0xNFQwOTo1NToxNi41NjNaIiwiY3JlYXRlZEJ5Ijp7Il9pZCI6IjYzMjFhNTA0YTQ2YjJjNzlmNmYwMWNiZSIsIm5hbWUiOiJtMTZsYWJzYWRtaW4iLCJ1c2VySWQiOiI2MTFjMGI4YWRjOGRhYjY1MjU0ZmQxMWUiLCJ1c2VyVHlwZSI6IlN1cGVyVXNlciJ9LCJ1cGRhdGVkQXQiOiIyMDIyLTA5LTE0VDA5OjU1OjE2LjU2M1oiLCJfX3YiOjB9XSwic3RvcmVzIjpbXSwiaWF0IjoxNjg0MzM4NTAxLCJleHAiOjE2ODQ1MTEzMDF9.VAqDsdbuMShyGuR_AGB0DdPAcgqKsy7tOYCW8Xd6_X8",
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           marketingCampId: "6464fb446f6ad6339a947340",
