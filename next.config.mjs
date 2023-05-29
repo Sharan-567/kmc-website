@@ -18,7 +18,7 @@ const nextConfig = {
     return [
       {
         source: "/api/:path*",
-        destination: "https://demo.metahos.com/api/:path*",
+        destination: "https://khmanipal.metahos.com/api/:path*",
         has: [
           {
             type: "header",
