@@ -38,7 +38,7 @@ const Contact = () => {
   };
   return (
     <div>
-      <section style={{ paddingTop: "7rem" }}>
+      <section style={{ paddingTop: "4rem" }}>
         <Container>
           <div className="d-flex justify-content-center align-items-center flex-column">
             <Header
@@ -51,8 +51,8 @@ const Contact = () => {
               Fill out the form below and we will get back to you
             </p>
           </div>
-          <form style={{ marginTop: "5rem" }}>
-            <Row className="my-4">
+          <form style={{}}>
+            <Row className="my-2">
               <Col sm={6}>
                 <div className="i-control">
                   <input
@@ -76,7 +76,7 @@ const Contact = () => {
                 </div>
               </Col>
             </Row>
-            <Row className="my-4">
+            <Row>
               <Col sm={12}>
                 <div className="i-control">
                   <input
@@ -89,7 +89,7 @@ const Contact = () => {
                 </div>
               </Col>
             </Row>
-            <Row className="my-4">
+            <Row>
               <Col sm={12}>
                 <div className="i-control">
                   <textarea
@@ -104,7 +104,7 @@ const Contact = () => {
               </Col>
             </Row>
           </form>
-          <div className=" d-flex align-items-center justify-content-center">
+          <div className="text-center m-0 p-0" style={{ height: "7rem" }}>
             <Button onClick={handleSubmit} className={`${s.btn}`}>
               Submit Now
             </Button>

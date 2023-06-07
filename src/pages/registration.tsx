@@ -7,7 +7,7 @@ import { FaPen } from "react-icons/fa";
 
 const Registration = () => {
   return (
-    <section style={{ paddingTop: "7rem" }}>
+    <section style={{ fontSize: "20px", paddingTop: "4rem" }}>
       <Container>
         <Header
           title="Registration"
@@ -17,14 +17,14 @@ const Registration = () => {
         <div className={s.content}>
           <div>
             <h2 style={{ fontWeight: "600" }}>Registration is online!</h2>
-            <p style={{ fontSize: "2rem" }}>
+            <p style={{ fontSize: "1.5rem" }}>
               Participation is in-person mode only
             </p>
           </div>
           <div>
             <Link href={"/registrationForm"}>
               <button className={s.btn}>
-                <FaPen size={40} color="white" className="pe-3" />
+                <FaPen size={40} color="white" className="pe-1" />
                 Online Registration Access
               </button>
             </Link>
@@ -32,11 +32,9 @@ const Registration = () => {
         </div>
         <div
           style={{
-            marginTop: "2rem",
-            fontSize: "28px",
+            fontSize: "22px",
             fontStyle: "italic",
             fontWeight: "400",
-            marginBottom: "3rem",
           }}
         >
           <p>

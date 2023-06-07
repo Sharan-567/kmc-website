@@ -47,8 +47,8 @@ const Banner = () => {
 
 const Detail = () => {
   return (
-    <section style={{ padding: "5rem 0rem" }}>
-      <Container>
+    <section style={{ padding: "2rem 5rem" }}>
+      <Container fluid>
         <Row>
           <Col lg={9}>
             <p className={styles.detailText}>
@@ -175,8 +175,8 @@ const Team = () => {
     <section className={styles.teamSection}>
       <Container>
         <Header
-          title="Team Medical Genetics"
-          styles={{ fontSize: "2.7rem", fontWeight: "500" }}
+          title="About us"
+          styles={{ fontSize: "20px", fontWeight: "500" }}
           barColor="#f32d20"
         />
         <p className={styles.teamContent}>
@@ -202,25 +202,28 @@ const Team = () => {
 const Venu = () => {
   return (
     <section className={styles.venuSection}>
-      <Row>
-        <Col lg={6} className={styles.venuLeftContainer}>
+      <Container>
+        <Row>
+          {/* <Col lg={6} className={styles.venuLeftContainer}>
           <div className={styles.venuPicture}>
             <h1>Venue Picture</h1>
           </div>
-        </Col>
-        <Col lg={6} className={styles.venuRightContainer}>
-          <Header
-            title="The Venue"
-            styles={{ color: "white", fontWeight: "500" }}
-            barColor="white"
-            className={styles.venuHeader}
-          />
-          <p className={styles.venuText}>
-            Interact Lecture Hall- Ga <br></br> Department of Medical <br></br>
-            Genetics <br></br> Kasturba Medical College,<br></br> Manipal
-          </p>
-        </Col>
-      </Row>
+        </Col> */}
+          <Col lg={12} className={styles.venuRightContainer}>
+            <Header
+              title="The Venue"
+              styles={{ color: "white", fontWeight: "500" }}
+              barColor="white"
+              className={styles.venuHeader}
+            />
+            <p className={styles.venuText}>
+              Interact Lecture Hall- Ga <br></br> Department of Medical{" "}
+              <br></br>
+              Genetics <br></br> Kasturba Medical College,<br></br> Manipal
+            </p>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };

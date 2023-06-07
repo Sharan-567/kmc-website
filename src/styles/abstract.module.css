@@ -1,29 +1,29 @@
 .reg_header {
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
 .content {
-  margin-top: 4rem;
+  margin-top: 2rem;
   font-style: italic;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 150%;
   letter-spacing: 0.025em;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .reg_header2 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .list {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 30px;
   letter-spacing: 0.05em;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .btn {

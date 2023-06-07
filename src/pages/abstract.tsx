@@ -4,7 +4,7 @@ import s from "@/styles/abstract.module.css";
 
 export default function Abstract() {
   return (
-    <section style={{ paddingTop: "7rem" }}>
+    <section style={{ paddingTop: "5rem" }}>
       <Container>
         <Header title="Abstract" barColor="#f32d20" className={s.reg_header} />
         <p className={s.content}>

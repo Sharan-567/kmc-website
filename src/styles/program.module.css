@@ -1,17 +1,17 @@
 .container {
-  padding-top: 7rem;
+  padding-top: 3rem;
   padding-bottom: 7rem;
 }
 
 .reg_header {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .subHeader {
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 150%;
   letter-spacing: 0.05em;
   padding-top: 0.5rem;
@@ -29,7 +29,7 @@
 .speakerTitle {
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 150%;
   text-align: center;
   letter-spacing: 0.05em;
@@ -38,7 +38,7 @@
 
 .table {
   margin-bottom: 1rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .tableContainer {
@@ -53,7 +53,7 @@
 
 .table tbody td {
   padding: 0.5rem;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .highlight {
@@ -64,6 +64,7 @@
 
 .tleft {
   text-align: left;
+  font-size: 18px;
   padding-left: 4em;
 }
 
@@ -71,7 +72,7 @@
   padding: 0.5em 1rem;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 150%;
   color: #208ef3;
   letter-spacing: 0.05em;

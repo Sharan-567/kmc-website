@@ -15,7 +15,7 @@ const Program = () => {
         <p className={s.subHeader}>
           Meet our confirmed conference speakers for the 2024 conference.
         </p>
-        <Row style={{ marginTop: "5rem", marginBottom: "6rem" }}>
+        <Row style={{ marginTop: "2rem", marginBottom: "1rem" }}>
           <Col sm={4}>
             <div className={s.speakerImageContainer}></div>
             <p className={s.speakerTitle}>Name of Speaker</p>

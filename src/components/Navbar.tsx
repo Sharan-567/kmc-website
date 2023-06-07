@@ -88,17 +88,14 @@ const BottomBarNav = ({ pathname }: { pathname: string }) => {
   };
 
   return (
-    <div
-      className={`${styles.navigation}`}
-      style={{ background: "white", height: "5rem" }}
-    >
+    <div className={`${styles.navigation}`} style={{ background: "white" }}>
       <Container>
         <div style={{ position: "relative" }}>
           <Navbar
             className={`${styles.navigation__container}`}
             style={{
               position: "absolute",
-              padding: "1.5rem",
+              // padding: "1.5rem",
               width: "100%",
               color: "white",
             }}
@@ -107,7 +104,6 @@ const BottomBarNav = ({ pathname }: { pathname: string }) => {
             variant="dark"
             expanded={expanded}
           >
-            <NavbarBrand></NavbarBrand>
             <Navbar.Toggle
               onClick={handleNavbarToggle}
               aria-controls="basic-navbar-nav"
